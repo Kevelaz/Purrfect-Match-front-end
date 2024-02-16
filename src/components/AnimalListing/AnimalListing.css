@@ -1,0 +1,73 @@
+/* Layout for animal cards to be side by side */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  gap: 20px; 
+}
+
+.cardItem {
+  width: calc(25% - 20px); /* Adjust for 4 items per row with gap */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+/* Styles for the modal */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures the modal is above other content */
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%; /* Adjust based on your design needs */
+  z-index: 1001; /* Ensures content is above the backdrop */
+}
+/* GPT ASSITANCE */
+#pages .active {
+  background-color: #c7d1b5;
+  color: white;
+}
+
+
+button {
+  background-color: #cbe896; /* Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #758654; /* Darker blue */
+  transform: scale(1.05);
+}
+
+
+/* @media (max-width: 768px) {
+  .cardItem {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .cardItem {
+    width: 100%; 
+  }
+} */
+
+
+
+
